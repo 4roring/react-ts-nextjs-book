@@ -9,6 +9,7 @@ import Message from "./components/Message";
 //import Parent from "./components/ContainerSample";
 import Counter from "./components/Counter";
 import Parent from "./components/Parent";
+import UseMemoSample from "./components/UseMemoSample";
 
 // const root = ReactDOM.createRoot(
 //   document.getElementById('root') as HTMLElement
@@ -25,6 +26,7 @@ ReactDOM.render(
     <Name />
     <Message />
     <Parent />
+    <UseMemoSample />
     <Counter initalValue={0} />
   </React.StrictMode>,
   document.getElementById("root")

@@ -10,6 +10,7 @@ import Message from "./components/Message";
 import Counter from "./components/Counter";
 import Parent from "./components/Parent";
 import UseMemoSample from "./components/UseMemoSample";
+import Clock from "./components/Clock";
 
 // const root = ReactDOM.createRoot(
 //   document.getElementById('root') as HTMLElement
@@ -28,6 +29,7 @@ ReactDOM.render(
     <Parent />
     <UseMemoSample />
     <Counter initalValue={0} />
+    <Clock />
   </React.StrictMode>,
   document.getElementById("root")
 );

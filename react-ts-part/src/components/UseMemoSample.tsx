@@ -16,6 +16,8 @@ const UseMemoSample = () => {
   };
 
   const numberOfCharacter1 = items.reduce((sub, item) => sub + item.length, 0);
+
+  // items 가 변경될 떄에만 다시 렌더링
   const numberOfCharacter2 = useMemo(() => {
     return items.reduce((sub, item) => sub + item.length, 0);
   }, [items]);

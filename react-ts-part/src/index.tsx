@@ -11,6 +11,10 @@ import Counter from "./components/Counter";
 import Parent from "./components/Parent";
 import UseMemoSample from "./components/UseMemoSample";
 import Clock from "./components/Clock";
+import ContextUI from "./components/Context";
+import ImageUploader from "./components/ImageUploader";
+import Imperative from "./components/Imperative";
+import CustomInput from "./components/CustomHook";
 
 // const root = ReactDOM.createRoot(
 //   document.getElementById('root') as HTMLElement
@@ -30,6 +34,10 @@ ReactDOM.render(
     <UseMemoSample />
     <Counter initalValue={0} />
     <Clock />
+    <ContextUI />
+    <ImageUploader />
+    <Imperative />
+    <CustomInput />
   </React.StrictMode>,
   document.getElementById("root")
 );

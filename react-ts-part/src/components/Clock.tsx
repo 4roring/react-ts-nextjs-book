@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 
 const UPDATE_CYCLE = 1000;
 const KEY_LOCALE = "KEY_LOCALE";
@@ -43,7 +43,7 @@ const Clock = () => {
   }, []);
 
   // 로케일 변경시 로컬 스토리지 값 저장
-  useEffect(() => {
+  useLayoutEffect(() => {
     localStorage.setItem(KEY_LOCALE, locale);
   }, [locale]);
 
